@@ -16,15 +16,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Numeros Aleatorios Parametrizados - JSP</title>
+        <title>Tabuada parametrizada - JSP</title>
     </head>
     <body>
         <h3><a href="index.jsp">Voltar</a></h3>
         <h1>Java Server Page</h1>
-        <h2> Numeros Aleatórios Parametrizados </h2>
+        <h2> Tabuada Parametrizada </h2>
         <div>
             <form>
-                Quantidade:
+                Tabuada:
                 <input type="number" name="n"/>
                 <input type="submit" name="gerar"/>
             </form>
@@ -37,13 +37,19 @@
         <% }else{ %>
         <table border="1">
             <tr>
-                <th>Seq</th>
-                <th>Num</th>
+                <th>Tab</th>
+                <th>Res</th>
             </tr>
-            <% for(int i=1;i<=n;i++){ %>
+            <% 
+                int x = 0,res = 0;
+                for(int i=1;i<=10;i++){
+                x++;
+                
+                res = n*x;
+            %>
             <tr>
-                <th><%= i %></th>
-                <th><%= ((int)(Math.random()*100)) %></th>
+                <th><%= i %> X <%= x %></th>
+                <th><%= res %></th>
             </tr>
             <%}%>
         </table>

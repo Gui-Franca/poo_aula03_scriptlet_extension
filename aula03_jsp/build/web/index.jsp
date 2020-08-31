@@ -14,6 +14,7 @@
         <h3><a href="minha_idade.jsp"> Minha idade com Scriptlet e Expression </a></h3>
         <h3><a href="numeros_aleatorios.jsp"> Números Aleatórios </a></h3>
         <h3><a href="numeros_aleatorios_parametrizados.jsp"> Números Aleatórios Parametrizados</a></h3>
+        <h3><a href="tabuada.jsp"> Tabuada Parametrizada</a></h3>
         
     </body>
 </html>
